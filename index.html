@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NES DET Coach｜学習プラン・進捗・演習</title>
+<meta name="description" content="Nippon English School の Duolingo English Test 学習プラン作成・進捗管理・演習問題アプリ（試作版）">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%232f5bea%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-size=%2218%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22 font-weight=%22700%22%3EN%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/home"><span class="logo">N</span><span><b>NES DET Coach</b><small>Duolingo English Test 学習サポート</small></span></a>
+  <div class="top-right">
+    <select id="studentSelect" class="student-select" aria-label="生徒を選択" hidden></select>
+    <div class="role-toggle" role="group" aria-label="モード">
+      <button data-role="student">生徒</button><button data-role="instructor">講師</button>
+    </div>
+  </div>
+</header>
+<nav class="tabs" id="nav"></nav>
+<main id="app" class="container"></main>
+<div id="modal" class="modal" hidden><div class="modal-card" id="modalCard"></div></div>
+<div id="toast" class="toast" hidden></div>
+<footer class="foot">試作版・データはこの端末のブラウザ（localStorage）に保存されます。DETは Duolingo, Inc. の試験です。本アプリの問題はNESのオリジナルで、公式問題ではありません。</footer>
+<script src="data/vocab.js"></script>
+<script src="data/wordbank.js"></script>
+<script src="js/bank.js"></script>
+<script src="js/seed.js"></script>
+<script src="js/planner.js"></script>
+<script src="js/questions.js"></script>
+<script src="js/app.js"></script>
+<script src="js/views_student.js"></script>
+<script src="js/practice.js"></script>
+<script src="js/views_instructor.js"></script>
+</body>
+</html>
